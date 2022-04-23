@@ -1,0 +1,32 @@
+# 1. Create a python function to check whether a number is Prime or not
+
+def check_prime(number):
+    for i in range(2,int(number)):
+        if number%i==0:
+            return f"{number} is not a prime number"
+    return f"{number} is a prime number"
+    
+    
+    
+    
+    
+# 2. Create a python function that when you inputs a number the function you have created checks whether the number belongs to the Fibonacci sequence or not. 
+
+number=int(input("Enter an interger and positive number: "))
+c=0
+a=1
+b=1
+if number < 0:
+    print("The number must be positive")
+if number==0 or number==1:
+    print(f"Yes, the number {number} belongs to the Fibonacci sequence")
+else:
+    while c<number:
+        c=a+b
+        b=a
+        a=c
+    if c==number:
+        print(f"Yes, the number {number} belongs to the Fibonacci sequence")
+    else:
+        print(f"No, the number {number} does not belong to the Fibonacci sequence")
+
