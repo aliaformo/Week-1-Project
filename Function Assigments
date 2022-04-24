@@ -12,7 +12,7 @@ def check_prime(number):
     
 # 2. Create a python function that when you inputs a number the function you have created checks whether the number belongs to the Fibonacci sequence or not. 
 
-number=int(input("Enter an interger and positive number: "))
+number=int(input("Enter an integer and positive number: "))
 c=0
 a=1
 b=1
